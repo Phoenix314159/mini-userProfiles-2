@@ -6,8 +6,8 @@ angular.module('userProfiles').service('mainService', function ($http) {
             url: 'http://localhost:3000/users'
         })
     }
-    this.toggleFavorite = index => {
-        data[index].isFavorite = !data[index].isFavorite;
+    this.toggleFavorite = (index,users) => {
+        users[index].isFavorite = !users[index].isFavorite;
     }
     this.firstLetterCaps = str => {
         return str.charAt(0).toUpperCase() + str.substr(1);

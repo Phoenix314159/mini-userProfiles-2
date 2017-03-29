@@ -2,7 +2,8 @@ angular.module('userProfiles').controller('mainController', function ($scope, ma
 
     $scope.getUsers = (() => {
         mainService.getUser().then(result => {
-            $scope.users = result;
+
+            $scope.users = result.data;
         });
     })();
 

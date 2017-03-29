@@ -9,7 +9,7 @@
 <div ng-class="{favorite: x.isFavorite}" ng-repeat="x in users">
     <img ng-src="{{x.avatar}}"/>
     <div>{{firstLetterCaps(x.first_name)}}&nbsp;{{firstLetterCaps(x.last_name)}}</div>
-    <button ng-click="toggleFavorite(x.id)">favorite</button>
+    <button ng-click="toggleFavorite(x.id,users)">favorite</button>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
 <script src="app.js"></script>
